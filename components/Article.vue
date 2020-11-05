@@ -1,10 +1,12 @@
 <template>
   <div
     v-editable="blok"
-    class="py-8 mb-6 text-5xl font-bold text-center">
-    <img 
-      class="h-60 w-screen mb-4 object-cover"
-      :src="blok.image.filename" />
+    class="prose my-24 mx-auto">
+    <h1>{{ blok.name }}</h1>
+    <p> {{ blok.intro }} </p>
+    <rich-text-renderer 
+      :document="blok.body"
+    />
   </div>
 </template>
 
