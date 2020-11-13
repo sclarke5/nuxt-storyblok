@@ -10,6 +10,7 @@
     <rich-text-renderer 
       :document="blok.body"
     />
+    
   </div>
 </template>
 
